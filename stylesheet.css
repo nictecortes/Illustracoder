@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;500&family=Raleway:wght@100;200;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Mulish:wght@200;300;500&family=Raleway:wght@100;200;300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  background: linear-gradient(
+      184deg,
+      rgba(34, 30, 62, 1) 0%,
+      rgba(35, 25, 111, 1) 35%,
+      rgba(21, 96, 136, 1) 100%
+    )
+    no-repeat;
+
+  font-family: Mulish;
+}
+h1 {
+  font-size: 6vw;
+  color: #dddada;
+}
+h2 {
+  color: #64ccc5;
+  text-align: center;
+  font-weight: 200;
+  font-size: 30px;
+  margin: 20px 0;
+}
+h3 {
+  font-size: 3.5vw;
+  color: #ea168e;
+}
+h4 {
+  color: #ea168e;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 20px;
+}
+
+nav p {
+  margin: 25px 45px;
+  color: white;
+}
+.hero {
+  margin: 10% 25%;
+}
+.hero p {
+  font-size: 3vw;
+  font-weight: 200;
+  color: #ffcd4b;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+.icons img {
+  width: 20px;
+  margin: 10px;
+}
+
+.text {
+  margin: 20px 60px;
+}
+.purple {
+  color: #cba0ff;
+}
+.orange {
+  color: #ff8f62;
+}
+.green {
+  color: #b9e981;
+}
+.blue {
+  color: #ff6a7b;
+}
+p {
+  color: #62a0ec;
+  margin-top: 35px;
+  font-weight: 200;
+}
+.dev-tools {
+  background-color: #efedff;
+  margin: 40px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 40px;
+}
+.dev-tools p {
+  margin-top: 10px;
+}
+.highlight {
+  color: #ffc468;
+}
+.panel {
+  background-color: #292748;
+  margin: 40px 40px;
+  border-radius: 20px;
+}
+.rack-img {
+  width: 350px;
+  display: block;
+  margin: 20px auto;
+}
+
+.clara-img {
+  width: 300px;
+  display: block;
+  margin: 40px auto;
+}
+.blueberry-logo {
+  display: block;
+  margin: 20px auto;
+  width: 200px;
+}
+.e-blueberry-img {
+  width: 230px;
+  display: block;
+  margin: 40px auto;
+}
+.rack-img {
+  width: 400px;
+}
+.panel p {
+  color: white;
+  text-align: center;
+  margin: 20px 20px;
+  font-weight: 200;
+}
+a {
+  text-decoration: none;
+  color: #ffcd4b;
+  display: block;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.clara-web h5 {
+  font-family: "Bodoni Moda", serif;
+  color: #ba22ce;
+  font-size: 35px;
+  text-align: center;
+}
+.clara-web h6 {
+  color: #e3d8d8;
+  font-size: 14px;
+  font-weight: 200;
+  text-align: center;
+  line-height: 0;
+}
+footer {
+  color: aliceblue;
+  text-align: center;
+}
+@media only screen and (min-width: 768px) {
+  .text {
+    font-size: 23px;
+    margin: 100px;
+  }
+  .img-text-divition {
+    display: flex;
+  }
+  .img-text-divition .clara-img {
+    width: 400px;
+  }
+  .text-panel {
+    width: 40%;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .clara-title h5 {
+    font-size: 50px;
+  }
+  .clara-title h6 {
+    font-size: 20px;
+  }
+  .panel {
+    margin: 70px 70px;
+    padding-top: 40px;
+  }
+  .blueberry-logo {
+    width: 300px;
+  }
+  .e-blueberry-img {
+    width: 300px;
+    height: 640px;
+  }
+}
+@media only screen and (min-width: 992px) {
+}
