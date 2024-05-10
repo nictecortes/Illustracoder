@@ -53,6 +53,7 @@ nav p {
   font-size: 3vw;
   font-weight: 200;
   color: #ffcd4b;
+  text-align: left;
 }
 .icons {
   display: flex;
@@ -81,7 +82,7 @@ nav p {
 }
 p {
   color: #62a0ec;
-  margin-top: 35px;
+  margin: 35px;
   font-weight: 200;
 }
 .dev-tools {
@@ -124,13 +125,11 @@ p {
   display: block;
   margin: 40px auto;
 }
-.rack-img {
-  width: 400px;
-}
+
 .panel p {
   color: white;
-  text-align: center;
-  margin: 20px 20px;
+  text-align: justify;
+  margin: 30px 50px;
   font-weight: 200;
 }
 a {
