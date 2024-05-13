@@ -46,6 +46,7 @@ nav p {
   margin: 25px 45px;
   color: white;
 }
+
 .hero {
   margin: 10% 25%;
 }
@@ -66,7 +67,7 @@ nav p {
 }
 
 .text {
-  margin: 20px 60px;
+  margin: 20px 30px;
 }
 .purple {
   color: #cba0ff;
@@ -82,8 +83,16 @@ nav p {
 }
 p {
   color: #62a0ec;
-  margin: 35px;
   font-weight: 200;
+}
+.text p {
+  margin: 35px;
+}
+.text-panel-container img {
+  width: 150px;
+  border-radius: 100px;
+  display: block;
+  margin: 0 auto;
 }
 .dev-tools {
   margin: 40px;
@@ -92,7 +101,6 @@ p {
   border-radius: 40px;
   border: 1px solid white;
 }
-
 .dev-tools h5 {
   color: #b9e981;
 }
@@ -108,6 +116,7 @@ p {
   border-radius: 20px;
   background-repeat: no-repeat;
   margin: 40px 40px;
+  padding: 40px 0;
 }
 
 .clara-img {
@@ -132,12 +141,12 @@ p {
   margin: 30px 50px;
   font-weight: 200;
 }
+
 a {
   text-decoration: none;
   color: #ffcd4b;
   display: block;
   text-align: center;
-  padding-bottom: 40px;
 }
 
 .clara-web h5 {
@@ -157,7 +166,26 @@ footer {
   color: aliceblue;
   text-align: center;
 }
-@media only screen and (min-width: 768px) {
+.footer h2 {
+  color: #8de9ff;
+}
+.botton {
+  margin: auto;
+  color: white;
+  border: 1px solid #64cbc5;
+  border-radius: 30px;
+  width: 120px;
+  font-size: 15px;
+  padding: 20px 0;
+  background-color: #0a416c;
+}
+.e-mail {
+  margin-top: 70px;
+}
+@media only screen and (min-width: 850px) {
+  .icons img {
+    width: 40px;
+  }
   .text {
     font-size: 23px;
     margin: 100px;
@@ -181,8 +209,12 @@ footer {
     font-size: 25px;
     margin-bottom: 30px;
   }
+  .Web-dev h2 {
+    font-size: 50px;
+  }
   .img-text-divition {
     display: flex;
+    align-items: center;
   }
   .img-text-divition .clara-img {
     width: 400px;
@@ -190,8 +222,8 @@ footer {
   .text-panel {
     width: 40%;
     text-align: center;
-    margin: 80px;
-    font-size: 20px;
+    margin: 40px;
+    font-size: 17px;
     line-height: 27px;
   }
   .clara-title h5 {
@@ -201,16 +233,64 @@ footer {
     font-size: 20px;
   }
   .panel {
-    margin: 70px 70px;
+    margin: 50px 50px;
     padding-top: 40px;
   }
   .blueberry-logo {
     width: 300px;
   }
+  .clara-img {
+    height: 640px;
+    margin-top: 120px;
+  }
   .e-blueberry-img {
     width: 300px;
     height: 640px;
+    margin-top: 80px;
   }
 }
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1000px) {
+  nav p {
+    font-size: 30px;
+    margin: 70px;
+  }
+
+  .text-panel-container img {
+    width: 350px;
+  }
+  .text-panel-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .text {
+    width: 50%;
+    margin-right: 10px;
+  }
+  .text p {
+    font-size: 25px;
+  }
+  .text-panel {
+    margin-right: 95px;
+  }
+  .panel p {
+    font-size: 25px;
+    line-height: 35px;
+  }
+  .link-to-web-site {
+    font-size: 22px;
+  }
+  .Web-dev h2 {
+    font-size: 70px;
+  }
+  .footer h2 {
+    font-size: 50px;
+  }
+  .botton {
+    border-radius: 40px;
+    width: 200px;
+    font-size: 20px;
+    padding: 20px 0;
+  }
 }
