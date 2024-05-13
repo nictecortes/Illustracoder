@@ -274,12 +274,16 @@ footer {
   .text-panel {
     margin-right: 95px;
   }
+  .text-panel:hover .link-to-web-site {
+    transform: scale(1.2);
+  }
   .panel p {
     font-size: 25px;
     line-height: 35px;
   }
   .link-to-web-site {
     font-size: 22px;
+    transition: transform 500ms;
   }
   .Web-dev h2 {
     font-size: 70px;
@@ -288,9 +292,13 @@ footer {
     font-size: 50px;
   }
   .botton {
-    border-radius: 40px;
+    border-radius: 50px;
     width: 200px;
     font-size: 20px;
     padding: 20px 0;
+    transition: transform 500ms;
+  }
+  .footer:hover .botton {
+    transform: scale(1.2);
   }
 }
