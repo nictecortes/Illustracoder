@@ -41,12 +41,10 @@ h4 {
   font-size: 20px;
   padding-top: 20px;
 }
-
 nav p {
   margin: 25px 45px;
   color: white;
 }
-
 .hero {
   margin: 10% 25%;
 }
@@ -65,7 +63,6 @@ nav p {
   width: 20px;
   margin: 10px;
 }
-
 .text {
   margin: 20px 30px;
 }
@@ -118,7 +115,6 @@ p {
   margin: 40px 40px;
   padding: 40px 0;
 }
-
 .clara-img {
   width: 300px;
   display: block;
@@ -134,21 +130,18 @@ p {
   display: block;
   margin: 40px auto;
 }
-
 .panel p {
   color: white;
   text-align: justify;
   margin: 30px 50px;
   font-weight: 200;
 }
-
 a {
   text-decoration: none;
   color: #ffcd4b;
   display: block;
   text-align: center;
 }
-
 .clara-web h5 {
   font-family: "Bodoni Moda", serif;
   color: #ba22ce;
@@ -181,6 +174,43 @@ footer {
 }
 .e-mail {
   margin-top: 70px;
+}
+.scroll {
+  animation: fade linear both;
+  animation-timeline: view();
+  animation-range: entry 50% cover 50%;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+div {
+  animation-timeline: initial; /* In firefox 97 behind experimental flag: */
+  print-color-adjust: initial; /* In firefox 97, safari 15.4 */
+
+  /*
+		Svg presentation attributes
+		They don't have compatibility tables on MDN,
+		but most of them are recognized in chrome devtools style panel:
+	*/
+  vector-effect: initial;
+  alignment-baseline: initial;
+  baseline-shift: initial;
+  color-interpolation: initial;
+  color-profile: initial; /* Is deprecated, and Chrome devtools gives a 'Unknown property name' warning */
+  color-rendering: initial; /* Is deprecated and non-standard */
+  dominant-baseline: initial;
+
+  /*
+		css reference on MDN also mentions this property, but there is no docs on MDN for it.
+		I think it was renamed to `overflow-block`, so maybe it should remain as is.
+	*/
+  block-overflow: initial;
 }
 @media only screen and (min-width: 850px) {
   .icons img {
