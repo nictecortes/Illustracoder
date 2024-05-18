@@ -178,6 +178,7 @@ footer {
 .e-mail {
   margin-top: 70px;
 }
+/*
 .scroll {
   animation: fade linear both;
   animation-duration: 1ms;
@@ -190,7 +191,18 @@ footer {
   animation-timeline: view();
   animation-range: entry 50% cover 30%;
 }
-
+*/
+.reveal{
+  position: relative;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: all 1s ease;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+/*
 @keyframes fade {
   from {
     opacity: 0;
@@ -199,29 +211,8 @@ footer {
     opacity: 1;
   }
 }
-div {
-  animation-timeline: initial; /* In firefox 97 behind experimental flag: */
-  print-color-adjust: initial; /* In firefox 97, safari 15.4 */
+*/
 
-  /*
-		Svg presentation attributes
-		They don't have compatibility tables on MDN,
-		but most of them are recognized in chrome devtools style panel:
-	*/
-  vector-effect: initial;
-  alignment-baseline: initial;
-  baseline-shift: initial;
-  color-interpolation: initial;
-  color-profile: initial; /* Is deprecated, and Chrome devtools gives a 'Unknown property name' warning */
-  color-rendering: initial; /* Is deprecated and non-standard */
-  dominant-baseline: initial;
-
-  /*
-		css reference on MDN also mentions this property, but there is no docs on MDN for it.
-		I think it was renamed to `overflow-block`, so maybe it should remain as is.
-	*/
-  block-overflow: initial;
-}
 @media only screen and (min-width: 850px) {
   .icons img {
     width: 40px;
