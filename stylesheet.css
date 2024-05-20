@@ -22,7 +22,7 @@ body {
   font-family: Mulish;
 }
 h1 {
-  font-size: 6vw;
+  font-size: 7vw;
   color: #dddada;
 }
 h2 {
@@ -33,7 +33,7 @@ h2 {
   margin: 20px 0;
 }
 h3 {
-  font-size: 3.5vw;
+  font-size: 5vw;
   color: #ea168e;
 }
 h4 {
@@ -47,7 +47,7 @@ nav p {
   color: white;
 }
 .hero {
-  margin: 10% 25%;
+  margin: 15% 25%;
 }
 .hero p {
   font-size: 3vw;
@@ -264,6 +264,9 @@ footer {
 @media only screen and (min-width: 850px) {
   .icons img {
     width: 40px;
+  }
+  .hero{
+    margin: 9% 25%;
   }
   .text {
     font-size: 23px;
