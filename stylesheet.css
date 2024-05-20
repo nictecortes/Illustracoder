@@ -96,7 +96,6 @@ p {
   margin: 0 auto;
 }
 .dev-tools {
-  margin: 40px;
   padding: 30px;
   text-align: center;
   border-radius: 40px;
@@ -163,11 +162,22 @@ a {
   line-height: 0;
 }
 footer {
+  height: 50vh;
+  background-image: url(./Portfolio-assets/IMG_5073.png);
+  background-size: cover;
   color: aliceblue;
   text-align: center;
+  
+}
+.contact-me{
+  margin: 100px;
 }
 .footer h2 {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  font-size: 45px;
   color: #8de9ff;
+  
 }
 .botton {
   margin: auto;
@@ -177,10 +187,11 @@ footer {
   width: 120px;
   font-size: 15px;
   padding: 20px 0;
-  background-color: #0a416c;
+  background-color: #08395F;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .e-mail {
-  margin-top: 70px;
+  margin-top: 40px;
 }
 .reveal{
   position: relative;
@@ -374,7 +385,9 @@ footer {
     font-size: 70px;
   }
   .footer h2 {
-    font-size: 50px;
+    font-size: 80px;
+    padding-top: 70px;
+    padding-bottom: 20px;
   }
   .botton {
     border-radius: 50px;
