@@ -4,6 +4,7 @@
 * {
   margin: 0;
   padding: 0;
+
 }
 html,
 body {
@@ -85,7 +86,10 @@ p {
 .text p {
   margin: 35px;
 }
-.text-panel-container img {
+#text-panel-container {
+  margin-top: 80px;
+}
+#text-panel-container img {
   width: 150px;
   border-radius: 100px;
   display: block;
@@ -178,20 +182,6 @@ footer {
 .e-mail {
   margin-top: 70px;
 }
-/*
-.scroll {
-  animation: fade linear both;
-  animation-duration: 1ms;
-  animation-timeline: view();
-  animation-range: entry 50% cover 50%;
-}
-.last-scroll {
-  animation: fade linear both;
-  animation-duration: 1ms;
-  animation-timeline: view();
-  animation-range: entry 50% cover 30%;
-}
-*/
 .reveal{
   position: relative;
   transform: translateY(50px);
@@ -202,16 +192,74 @@ footer {
   transform: translateY(0px);
   opacity: 1;
 }
-/*
-@keyframes fade {
-  from {
+.mouse-wrap--container{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.mouse-wrap {
+  z-index: 9;
+}
+
+.mouse-wrap:active, .mouse-wrap:active > .mouse-label, .mouse-wrap:focus, .mouse-wrap:focus > .mouse-label {
+  outline: none;
+}
+
+.mouse-wrap.mouse-with-slider {
+  bottom: -50px;
+}
+
+.mouse-wrap .mouse-label {
+  top: 0;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .05rem;
+  text-align: center;
+  
+}
+.mouse-wrap .mouse {
+  width: 22px;
+  height: 42px;
+  bottom: 30px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  border: 2px solid #64cbc5;
+  animation: intro 2s;
+}
+
+.mouse-wrap .mouse .scroll {
+  display: block;
+  width: 3px;
+  height: 3px;
+  margin: 6px auto;
+  border-radius: 4px;
+  background: #fff;
+  animation: finger 2s infinite;
+}
+@keyframes intro{
+  0% {
     opacity: 0;
+    transform: translateY(40px); 
   }
-  to {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+   
+}
+@keyframes finger {
+  0% {
     opacity: 1;
   }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
 }
-*/
 
 @media only screen and (min-width: 850px) {
   .icons img {
@@ -292,10 +340,10 @@ footer {
     margin: 70px;
   }
 
-  .text-panel-container img {
+  #text-panel-container img {
     width: 350px;
   }
-  .text-panel-container {
+  #text-panel-container {
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
