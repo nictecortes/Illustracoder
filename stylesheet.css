@@ -212,18 +212,14 @@ footer {
 }
 
 .mouse-wrap .mouse-label {
-  top: 0;
   color: #fff;
   font-size: 10px;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: .05rem;
   text-align: center;
-  
 }
 .mouse-wrap .mouse {
-  width: 22px;
-  height: 42px;
-  bottom: 30px;
+  height: 48px;
   display: flex;
   align-items: center;
   border-radius: 15px;
