@@ -46,6 +46,14 @@ nav p {
   margin: 25px 45px;
   color: white;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a{
+  margin: 30px;
+}
 .hero {
   margin: 15% 25%;
 }
@@ -94,8 +102,11 @@ p {
   border-radius: 100px;
   display: block;
   margin: 0 auto;
+  animation: intro 2s;
 }
+
 .dev-tools {
+  margin: 50px;
   padding: 30px;
   text-align: center;
   border-radius: 40px;
@@ -111,6 +122,35 @@ p {
 .highlight {
   color: #ffc468;
 }
+.marketing{
+width: 70%;
+margin: 0 auto 85px auto;
+}
+.marketing h4 {
+ color: #b9e981;
+ margin-bottom: 15px;
+}
+.marketing p{
+  text-align: center;
+  margin-bottom: 30px;
+  line-height: 22px;
+}
+.marketing-imgs img{
+  width: 50%;
+  display: block;
+  margin: 20px auto;
+}
+.img-analytics{
+  height: 10%;
+}
+.marketing-imgs{
+  background-color: rgb(255, 255, 255, 0.9);
+  padding: 30px 50px;
+  width: 50%;
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
 .panel {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 20px;
@@ -162,16 +202,14 @@ a {
   line-height: 0;
 }
 footer {
-  height: 50vh;
+  
   background-image: url(./Portfolio-assets/IMG_5073.png);
   background-size: cover;
   color: aliceblue;
   text-align: center;
   
 }
-.contact-me{
-  margin: 100px;
-}
+
 .footer h2 {
   padding-top: 50px;
   padding-bottom: 30px;
@@ -192,6 +230,7 @@ footer {
 }
 .e-mail {
   margin-top: 40px;
+  padding: 70px;
 }
 .reveal{
   position: relative;
@@ -349,6 +388,17 @@ footer {
     font-size: 30px;
     margin: 70px;
   }
+  nav a{
+    font-size: 25px;
+    margin: 70px;
+  }
+  .marketing p{
+    font-size: 25px;
+    line-height: 40px;
+  }
+  .marketing-imgs{
+  display: flex;
+  }
 
   #text-panel-container img {
     width: 350px;
@@ -381,7 +431,7 @@ footer {
     font-size: 22px;
     transition: transform 500ms;
   }
-  .Web-dev h2 {
+  .Web-dev h2, .marketing h2 {
     font-size: 70px;
   }
   .footer h2 {
